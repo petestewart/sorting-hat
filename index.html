@@ -9,26 +9,28 @@
 </head>
 <body>
 
-    <!-- fill out with intro -->
+
     <div class="jumbotron">
         <h1 class="display-4">Welcome To Hoggy Hoggy Warts!</h1>
         <p class="lead">Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers.</p>
         <hr class="my-4">
         <p>Ravenclaw’s Diadem 10 galleons Thieves Downfall.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Let's start sorting!</a>
+          <a class="btn btn-primary btn-lg" href="#" role="button" id="start">Let's start sorting!</a>
         </p>
       </div>
-      <!-- end of jumbotron -->
 
-      <!-- fill out with name and sort button -->
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Enter First Year's name</label>
-          <input type="text" class="form-control" id="name" placeholder="Neville Longbottom">
-        <button type="submit" class="btn btn-primary">Sort!</button>
-      </form>
-      <!-- end of form -->
+
+      <div id="formArea">
+        <form id="studentForm" onsubmit="return false"> <!-- without return false the page reloads. why??-->
+            <div class="form-group">
+            <label for="name">Enter First Year's name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Neville Longbottom">
+            </div>
+            <button type="submit" id="sortButton" class="btn btn-primary">Sort!</button>
+        </form>
+      </div>
+
 
       <div id="cardsArea">
         <!-- fill out cards with name and house -->
