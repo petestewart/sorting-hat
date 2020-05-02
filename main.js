@@ -33,6 +33,7 @@ const showForm = () => {
 const getName = (e) => {
     const studentName = e.target[0].value;
     addStudent (studentName);
+    document.getElementById("studentForm").reset();
 }
 
 const printToDom = (selector, textToPrint) => {
