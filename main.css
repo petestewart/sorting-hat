@@ -5,3 +5,15 @@ body {
 #cardsArea {
     display: flex; 
 }
+
+.card {
+    border: 2px solid black;
+    margin: 15px;
+}
+
+.myform {
+    background-color: lightgrey;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 30px;
+}
