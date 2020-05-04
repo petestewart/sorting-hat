@@ -2,18 +2,44 @@ body {
     background-color: gray;
 }
 
-#cardsArea {
-    display: flex; 
+
+#card-grid {
+    margin: 20px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#filtersArea{
+    margin: 20px;
+    padding: 20px;
 }
 
 .card {
     border: 2px solid black;
     margin: 15px;
+    align-self: flex-start !important;
 }
 
 .myform {
     background-color: lightgrey;
     border: 2px solid black;
-    margin: 15px;
+    margin: 20px;
     padding: 30px;
+}
+
+.card-Gryffindor {
+    background-color: green;
+}
+
+.card-Hufflepuff {
+    background-color :lightyellow;
+}
+
+.card-Ravenclaw {
+    background-color: lightblue;
+}
+
+.card-Slytherin {
+    background-color: lightpink;
 }
